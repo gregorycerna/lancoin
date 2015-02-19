@@ -1137,12 +1137,13 @@ void MapPort()
 // Each pair gives a source name and a seed name.
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
-static const char *strDNSSeed[][2] = {
+static const char *strDNSSeed[][2] = {}
+/*
     {"litecoinpool.org", "dnsseed.litecoinpool.org"},
     {"bytesized-vps.com", "dnsseed.bytesized-vps.com"},
     {"xurious.com", "dnsseed.ltc.xurious.com"},
 };
-
+*/
 void ThreadDNSAddressSeed(void* parg)
 {
     IMPLEMENT_RANDOMIZE_STACK(ThreadDNSAddressSeed(parg));
@@ -1208,9 +1209,9 @@ void ThreadDNSAddressSeed2(void* parg)
 
 
 unsigned int pnSeed[] =
-{
+{};/*
     0x2EFDCB71, 0xCC1B3AD6, 0xADA77149,
-};
+};*/
 
 void DumpAddresses()
 {
